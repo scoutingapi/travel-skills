@@ -1,0 +1,71 @@
+{
+  "name": "travel-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for accommodation search, availability, pricing, cross-OTA comparison and reviews via ScoutingAPI.",
+  "author": "ScoutingAPI",
+  "homepage": "https://scoutingapi.com",
+  "repository": "https://github.com/scoutingapi/travel-skills",
+  "license": "MIT-0",
+  "skills": [
+    {
+      "name": "scoutingapi-search",
+      "path": "skills/scoutingapi-search",
+      "description": "Search and compare accommodation prices across Airbnb, Booking.com, Vrbo and Google Hotels via the ScoutingAPI REST API. Use when a user wants to find stays, check availability, get a price, compare one property across OTAs, or read reviews. Covers Bearer auth, the async 202→poll job contract, the unified response envelope, and error handling."
+    },
+    {
+      "name": "scoutingapi-mcp",
+      "path": "skills/scoutingapi-mcp",
+      "description": "Connect an AI agent to the ScoutingAPI Model Context Protocol (MCP) server for accommodation search, availability, pricing, cross-OTA price comparison and reviews. Use when the agent runtime supports MCP connectors (e.g. Claude) and you want OAuth-based access without managing API keys. Covers the OAuth 2.1 + PKCE connect flow, the seven read-only tools, and when to prefer MCP vs REST."
+    },
+    {
+      "name": "scoutingapi-cross-ota-price-comparison",
+      "path": "skills/scoutingapi-cross-ota-price-comparison",
+      "description": "Compare one property across booking platforms and report the cheapest rate, with savings vs. the median. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-availability-alert",
+      "path": "skills/scoutingapi-availability-alert",
+      "description": "Watch a listing over a date window and get alerted the moment a wanted date becomes available. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-price-drop-watcher",
+      "path": "skills/scoutingapi-price-drop-watcher",
+      "description": "Watch a specific stay and get alerted the moment its total price falls to or below your threshold. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-rate-parity-monitor",
+      "path": "skills/scoutingapi-rate-parity-monitor",
+      "description": "Watch how your own listing's rate shows across OTAs on a schedule and flag any platform underselling the market median. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-str-market-scan",
+      "path": "skills/scoutingapi-str-market-scan",
+      "description": "Scan a short-term-rental market — discover listings across platforms, price the top N for your dates, and append a normalized row-per-listing dataset to a Google Sheet. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-new-inventory-lead-gen",
+      "path": "skills/scoutingapi-new-inventory-lead-gen",
+      "description": "Re-run a saved search on a schedule, diff it against the last run, and sync only the newly-listed properties into a CRM or Sheet as leads. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-review-intelligence-digest",
+      "path": "skills/scoutingapi-review-intelligence-digest",
+      "description": "Pull normalized reviews for a property on a schedule and deliver a weekly digest — average rating, recurring themes, and the latest complaints to act on. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-comp-set-benchmark",
+      "path": "skills/scoutingapi-comp-set-benchmark",
+      "description": "Benchmark your listing’s rate and availability against a defined comp-set and get a weekly position report. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-mcp-agent-scouting",
+      "path": "skills/scoutingapi-mcp-agent-scouting",
+      "description": "Connect ScoutingAPI as a Claude/Cursor MCP connector and scout stays, compare prices and check availability conversationally — no keys pasted. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-cheapest-link-resolver",
+      "path": "skills/scoutingapi-cheapest-link-resolver",
+      "description": "Resolve a property + dates to the single cheapest bookable link (with price and OTA) as clean JSON — for a concierge bot, a \"book now\" button, or an internal tool. Powered by the ScoutingAPI REST API / MCP server."
+    }
+  ]
+}

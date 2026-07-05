@@ -20,10 +20,21 @@ Portable **SKILL.md** agent skills for accommodation data across Airbnb, Booking
 - **[scoutingapi-comp-set-benchmark](skills/scoutingapi-comp-set-benchmark/SKILL.md)** — Benchmark your listing’s rate and availability against a defined comp-set and get a weekly position report. Powered by the ScoutingAPI REST API / MCP server.
 - **[scoutingapi-mcp-agent-scouting](skills/scoutingapi-mcp-agent-scouting/SKILL.md)** — Connect ScoutingAPI as a Claude/Cursor MCP connector and scout stays, compare prices and check availability conversationally — no keys pasted. Powered by the ScoutingAPI REST API / MCP server.
 - **[scoutingapi-cheapest-link-resolver](skills/scoutingapi-cheapest-link-resolver/SKILL.md)** — Resolve a property + dates to the single cheapest bookable link (with price and OTA) as clean JSON — for a concierge bot, a "book now" button, or an internal tool. Powered by the ScoutingAPI REST API / MCP server.
+- **[scoutingapi-event-radar](skills/scoutingapi-event-radar/SKILL.md)** — Watch supply and prices around an event or peak date-window in a city and get alerted when demand tightens. Powered by the ScoutingAPI REST API / MCP server.
+- **[scoutingapi-portfolio-feed](skills/scoutingapi-portfolio-feed/SKILL.md)** — A daily digest across a saved set of listings — price, rating and recent reviews per listing in one report. Powered by the ScoutingAPI REST API / MCP server.
 
 ## Install
 
 Each skill is a self-contained `SKILL.md` under [`skills/`](skills/). Copy the folder into your agent's skills directory, give the agent a `SCOUTINGAPI_KEY` (a `scout_test_` sandbox key works for evaluation, at zero cost), and ask it to run the task. The skills are also discoverable at [https://scoutingapi.com/.well-known/agent-skills/index.json](https://scoutingapi.com/.well-known/agent-skills/index.json).
+
+## Per-platform skills
+
+Prefer keyword-named skills for one platform? Each platform has its own repo with search, availability/calendar, prices, cross-OTA comparison and reviews skills:
+
+- [airbnb-skills](https://github.com/scoutingapi/airbnb-skills) — Airbnb agent skills
+- [booking-com-skills](https://github.com/scoutingapi/booking-com-skills) — Booking.com agent skills
+- [vrbo-skills](https://github.com/scoutingapi/vrbo-skills) — Vrbo agent skills
+- [google-hotels-skills](https://github.com/scoutingapi/google-hotels-skills) — Google Hotels agent skills
 
 ## Credits
 
@@ -43,6 +54,10 @@ Part of the ScoutingAPI open resource set — one unified accommodation-data API
 - [travel-api](https://github.com/scoutingapi/travel-api)
 - [hotel-mcp](https://github.com/scoutingapi/hotel-mcp)
 - [travel-workflows](https://github.com/scoutingapi/travel-workflows)
+- [airbnb-skills](https://github.com/scoutingapi/airbnb-skills)
+- [booking-com-skills](https://github.com/scoutingapi/booking-com-skills)
+- [vrbo-skills](https://github.com/scoutingapi/vrbo-skills)
+- [google-hotels-skills](https://github.com/scoutingapi/google-hotels-skills)
 
 - Website: <https://scoutingapi.com> · Docs: <https://scoutingapi.com/docs> · Status: <https://status.scoutingapi.com>
 

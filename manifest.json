@@ -66,6 +66,16 @@
       "name": "scoutingapi-cheapest-link-resolver",
       "path": "skills/scoutingapi-cheapest-link-resolver",
       "description": "Resolve a property + dates to the single cheapest bookable link (with price and OTA) as clean JSON — for a concierge bot, a \"book now\" button, or an internal tool. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-event-radar",
+      "path": "skills/scoutingapi-event-radar",
+      "description": "Watch supply and prices around an event or peak date-window in a city and get alerted when demand tightens. Powered by the ScoutingAPI REST API / MCP server."
+    },
+    {
+      "name": "scoutingapi-portfolio-feed",
+      "path": "skills/scoutingapi-portfolio-feed",
+      "description": "A daily digest across a saved set of listings — price, rating and recent reviews per listing in one report. Powered by the ScoutingAPI REST API / MCP server."
     }
   ]
 }

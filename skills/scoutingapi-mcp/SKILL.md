@@ -10,7 +10,7 @@ ScoutingAPI ships a native **Model Context Protocol** server so an agent can que
 accommodation data across Airbnb, Booking.com, Vrbo and Google Hotels as first-class
 tools — no API key pasted into the agent.
 
-- Server URL: **https://mcp.scoutingapi.com** (Streamable HTTP transport).
+- Server URL: **https://mcp.scoutingapi.com/mcp** (Streamable HTTP transport).
 - Auth: **OAuth 2.1 + PKCE (S256)** with dynamic client registration. You authorize
   once in a browser popup; the connector is linked to your ScoutingAPI account and its
   credit balance.
@@ -18,7 +18,7 @@ tools — no API key pasted into the agent.
 
 ## Connect (Claude.ai / Claude Desktop / Claude Code)
 1. Open your agent's connector settings and **add a custom connector** (MCP server).
-2. Use the URL `https://mcp.scoutingapi.com`.
+2. Use the URL `https://mcp.scoutingapi.com/mcp`.
 3. Complete the **OAuth** prompt in the browser popup — this links the connector to your
    ScoutingAPI account. (First-time users: create an account and verify email first; a
    sandbox account works for evaluation. See https://scoutingapi.com/docs/mcp.)
